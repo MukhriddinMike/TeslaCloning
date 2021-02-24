@@ -13,9 +13,6 @@ const StyledButton = (props) => {
     const textColor = type === 'primary' ? 'white' : 'black';
     return (
         <View style={styles.container}>
-        {/*    <TouchableOpacity  style={styles.button} onPress={() => {console.warn( 'pressable iwlavotti')}}>*/}
-        {/*        <Text style={styles.text}>Custom Order</Text>*/}
-        {/*</TouchableOpacity >*/}
             <Pressable style={[styles.button, {backgroundColor: backgroundColor}]} onPress={() => onPress()}>
                 <Text style={[styles.text, {color: textColor}]}>{content}</Text>
             </Pressable>
